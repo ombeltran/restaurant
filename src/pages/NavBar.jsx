@@ -6,6 +6,7 @@ import { TiShoppingCart } from "react-icons/ti";
 import { CarContext } from "../context/SCarProvider";
 import { TiThMenuOutline } from "react-icons/ti";
 import { FaTimes } from "react-icons/fa";
+import logo from "../images/frontPage/logo.jpeg"
 
 
 
@@ -33,7 +34,7 @@ export const NavBar = () => {
                 <Link to="/">
                     <img
                         className='h-16 rounded-full ml-5'
-                        src="src/images/frontPage/logo.jpeg"
+                        src={logo}
                         alt="logo"
                     />
                 </Link>

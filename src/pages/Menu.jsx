@@ -15,7 +15,7 @@ import {
 
 export const Menu = () => {
   const [listMenu, setListMenu] = useState([]);
-  const { shopping, setShopping, setCarVisible } = useContext(CarContext);
+  const { shopping, setShopping } = useContext(CarContext);
 
   const handleBottonClick = (option) => {
     switch (option) {
