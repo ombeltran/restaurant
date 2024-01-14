@@ -12,6 +12,7 @@ import 'aos/dist/aos.css';
 import imageI  from "../images/frontPage/hamburguer.jpeg";
 import imageII from "../images/frontPage/hotDog.jpeg";
 import imageIII from "../images/frontPage/salchipapa.jpeg";
+import imageIV from "../images/frontPage/logo.jpeg";
 
 
 export const Home = () => {
@@ -22,8 +23,7 @@ export const Home = () => {
   const images = [
     imageI,
     imageII,
-    imageIII,
-
+    imageIII
   ];
 
   const settings = {
@@ -110,7 +110,7 @@ export const Home = () => {
           <CardInfo>
             <img
               className='md:h-[120px] h-[25%] rounded-full mx-auto mb-4'
-              src="src/images/frontPage/logo.jpeg"
+              src={imageIV}
               alt="logo"
             />
             <p className='text-3xl font-bold'>
