@@ -6,7 +6,7 @@ import { TiShoppingCart } from "react-icons/ti";
 import { CarContext } from "../context/SCarProvider";
 import { TiThMenuOutline } from "react-icons/ti";
 import { FaTimes } from "react-icons/fa";
-import logo from "../images/frontPage/logo.jpeg"
+import logo from "/frontPage/logo.jpeg"
 
 
 

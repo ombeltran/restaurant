@@ -9,10 +9,10 @@ import { CardInfo } from "../component/ui/CardInfo";
 import { IoLogoWhatsapp } from "react-icons/io";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import imageI  from "../images/frontPage/hamburguer.jpeg";
-import imageII from "../images/frontPage/hotDog.jpeg";
-import imageIII from "../images/frontPage/salchipapa.jpeg";
-import imageIV from "../images/frontPage/logo.jpeg";
+import imageI  from "/frontPage/hamburguer.jpeg";
+import imageII from "/frontPage/hotDog.jpeg";
+import imageIII from "/frontPage/salchipapa.jpeg";
+import imageIV from "/frontPage/logo.jpeg";
 
 
 export const Home = () => {
