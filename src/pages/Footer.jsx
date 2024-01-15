@@ -7,8 +7,8 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 export const Footer = () => {
     return (
-        <div className='flex items-center justify-between bg-orange-700 
-        md:gap-28 gap-20 py-6 md:px-60 px-32'>
+        <div className='flex items-center justify-between bg-red-600 
+        md:gap-28 gap-20 py-6 md:px-60 sm:px-32 px-16'>
             <div className='flex flex-col h-44 items-center justify-center'>
                 <ul className='flex flex-col gap-2 text-white mx-auto text-4xl cursor-pointer'>
                     <li><FaFacebook /></li>

@@ -33,13 +33,13 @@ export const NavBar = () => {
         py-1 border-b-2 shadow-md bg-white'>
                 <Link to="/">
                     <img
-                        className='h-16 rounded-full ml-5'
+                        className='h-16 rounded-full ml-10'
                         src={logo}
                         alt="logo"
                     />
                 </Link>
 
-                <div className='flex flex-col items-center pt-4'>
+                <div className={`flex flex-col items-center ${isMenuOpen? ('pt-36 md:pt-0'):('pt-4') }`}>
                     <label
                         htmlFor="menu"
                         onClick={handleMenuOpen}
@@ -47,15 +47,15 @@ export const NavBar = () => {
                     >
                         {
                             isMenuOpen ?
-                                (<FaTimes className='text-orange-700 text-4xl md:hidden' />) :
-                                (<TiThMenuOutline className='text-orange-700 text-4xl md:hidden' />)
+                                (<FaTimes className='text-red-700 text-4xl md:hidden' />) :
+                                (<TiThMenuOutline className='text-red-700 text-4xl md:hidden' />)
                         }
 
                     </label>
 
 
-                    <ul className={`flex flex-col items-center justify-center md:flex-row gap-6 text-xl font-bold 
-                            text-orange-700 cursor-pointer md:bg-transparent w-full md:w-0 mt-8 md:mt-0 rounded-2xl
+                    <ul className={`flex flex-col items-center justify-center md:flex-row gap-6 text-2xl font-bold 
+                            text-red-700 cursor-pointer md:bg-transparent w-full md:w-0 mt-8 md:mt-0 rounded-2xl
                             ${isMenuOpen ? ('block') : ('hidden md:inline-flex')}`}
                         onClick={handleMenuOpen}
                     >
@@ -72,7 +72,7 @@ export const NavBar = () => {
                 </div>
 
                 <Botton
-                    className="text-3xl h-12 w-24 px-0"
+                    className="text-3xl h-12 mr-10 w-auto lg:w-24 px-3"
                     onClick={handleClick}
                 >
                     <TiShoppingCart />
@@ -82,8 +82,8 @@ export const NavBar = () => {
 
             {isMenuOpen ?
                 (
-                    <div className='absolute bg-black/[98%] w-[98%] h-[500%] z-10 top-[76px] rounded-2xl
-                    bg-gradient-to-t from-black/5 to-white mx-2 md:hidden'></div>
+                    <div className='absolute bg-black/[98%] w-screen h-[500%] z-10 top-[76px] rounded-2xl
+                    bg-gradient-to-t from-black/5 to-white md:hidden'></div>
                 ) : ('')
             }
 

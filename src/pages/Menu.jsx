@@ -70,47 +70,50 @@ export const Menu = () => {
       <div className="Container flex flex-col justify-center items-center">
         <div className='h-[80px]'></div>
 
-        <div className='flex flex-row flex-wrap md:flex-nowrap gap-4 md:gap-0 
+        <div className='flex flex-row flex-wrap md:flex-nowrap gap-4 md:gap-8 
         h-[74px] w-[98%] px-5 mt-8 md:mt-0 justify-center'>
           {optionsMenu.map((option) => (
             <Botton
               key={option}
               onClick={() => handleBottonClick(option)}
-              className="text-sm h-10 shadow-xl inset-0 
-            bg-gradient-to-tr from-white/65 from-10% via-orange-600 via-30% to-orange-800 to-95%"
+              className="text-sm h-10 shadow-xl inset-0 bg-gradient-to-tr from-white/65 
+              from-10% via-red-600 via-30% to-red-800 to-95% w-[104px] md:w-28"
             >
               {option}
             </Botton>
           ))}
         </div>
 
-        <div className="flex gap-6 justify-center h-screen w-[85%] px-5 pt-4 mt-20 md:mt-0">
+        <div className="flex flex-wrap gap-4 md:gap-2 h-auto w-[85%] pt-4 mt-20 md:mt-0">
           {listMenu.map(({ name, price, image, id }) => (
             <Card key={id}>
               <img
                 src={image}
                 alt={name}
-                className="w-full h-[53%] md:h-[70%] rounded-t-2xl"
+                className="w-full h-[57%] sm:h-[70%] rounded-t-2xl"
               />
-              <div className="flex justify-between items-center pr-4 pt-4 mb-3 h-[87px] sm:h-[65px] md:h-[99px] xl:h-[61px]">
-                <div className="px-3 gap-3">
+              <div className="flex flex-col justify-between w-full">
+                <div className="flex flex-col justify-between p-3 2xl:text-2xl 2xl:py-10">
                   <div>{name}</div>
                   <div className='font-normal'>{formatCurrency(price)}</div>
                 </div>
+
+                <div
+                  className="flex justify-center items-center bg-black/90 
+                  rounded-b-2xl w-full h-12 cursor-pointer 2xl:text-2xl 2xl:h-14 px-4"
+                  onClick={() => { handleAddToCart(id, name, price) }}
+                >
+                  Agregar al carrito
+                </div>
               </div>
-              <div
-                className="flex justify-center items-center bg-black/90 rounded-b-2xl w-full h-10 cursor-pointer "
-                onClick={() => {handleAddToCart(id, name, price) }}
-              >
-                Agregar al carrito
-              </div>
+
             </Card>
           ))}
         </div>
       </div>
 
       <ShoppingCar />
-    
+
     </div >
   );
 };

@@ -39,17 +39,17 @@ export const Home = () => {
   return (
     <div>
       <div className='h-[72px]'></div>
-      <Section className="flex flex-col lg:flex-row items-center justify-center bottom-0 
+      <Section className="flex flex-col lg:flex-row items-center justify-center 
       lg:h-[480px] py-8 lg:gap-28 gap-10">
         <div
           data-aos="fade-right"
-          className='flex flex-col items-center justify-center scale-75 lg:scale-100 gap-7 px-8 pb-4 text-justify 
-         h-[328px] w-[450px] rounded-2xl shadow-xl shadow-black'
+          className='flex flex-col items-center justify-center scale-75 lg:scale-100  px-8 pb-4 text-justify 
+         h-[328px] w-[400px] md:w-[450px] rounded-2xl shadow-xl shadow-black'
         >
-          <h1 className='text-5xl font-bold text-orange-700'>¡Bienvenido!</h1>
+          <h1 className='text-5xl font-bold text-red-600'>¡Bienvenido!</h1>
           <p className='text-3xl font-bold'>
             5ta Estacion es más que comida, es una experiencia de sabores.
-            Haz tu pedido ya a la <span className='text-orange-700 font-bold'>
+            Haz tu pedido ya a la <span className='text-red-600 font-bold'>
               5ta Estación
             </span>.
           </p>
@@ -57,7 +57,8 @@ export const Home = () => {
 
         <div
           data-aos="fade-left"
-          className='w-[450px] h-[328px] scale-75 lg:scale-100 rounded-2xl shadow-xl shadow-black p-2'
+          className='w-[400px] md:w-[450px] h-[328px] scale-75 lg:scale-100 
+          rounded-2xl shadow-xl shadow-black p-2'
         >
           <Slider {...settings}>
             {images.map((image, index) => (
@@ -73,8 +74,8 @@ export const Home = () => {
         </div>
       </Section>
 
-      <Section className="flex justify-center items-center bottom-0 lg:h-[780px] 
-      h-[600px] w-full bg-gradient-to-t from-white to-orange-700">
+      <Section className="flex justify-center items-center lg:h-[780px] 
+      h-[600px] w-full bg-gradient-to-t from-white to-red-600">
         <div className="flex flex-col items-center gap-12 xl:scale-[80%] 
         lg:scale-[60%] sm:scale-[50%] scale-[35%]">
           <h1 className='text-center text-6xl font-bold text-white md:mt-3'>¡Bienvenidos! El servicio es nuestro lema</h1>
@@ -94,16 +95,16 @@ export const Home = () => {
         </div>
       </Section>
 
-      <Section className="flex flex-col text-center justify-center bottom-0 md:h-[650px] h-[900px] w-full">
+      <Section className="flex flex-col text-center justify-center md:h-[650px] h-auto gap-10 w-full">
         <h1 className='text-black/80 text-5xl mt-3 pt-11 font-bold'>ASÍ PUEDES HACER TU PEDIDO</h1>
         <div
           data-aos="fade-right"
-          className='flex items-center justify-center h-full lg:gap-36 gap-14'
+          className='flex items-center justify-center h-full lg:gap-36 gap-12'
         >
           <CardInfo>
             <IoLogoWhatsapp className='text-green-800 md:text-9xl text-[90px] mx-auto mb-4' />
             <p className='text-3xl font-bold'>
-              Puedes hacer tus pedidos mediante <span className='text-orange-700'>What'sApp</span>
+              Haz tus pedidos con <span className='text-red-600'>What'sApp</span>
             </p>
           </CardInfo>
 
@@ -114,13 +115,13 @@ export const Home = () => {
               alt="logo"
             />
             <p className='text-3xl font-bold'>
-              También desde nuestra <span className='text-orange-700'>pagina web</span>
+              También desde nuestra <span className='text-red-600'>pagina web</span>
             </p>
           </CardInfo>
         </div>
 
         <p className='text-4xl font-bold text-black/80 pb-4'>
-          Puedes pagar a través <span className='text-orange-700'>Nequi Bancolombia</span>
+          Puedes pagar a través <span className='text-red-600'>Nequi Bancolombia</span>
           , o si lo deseas cuando recibas tu pedido.
         </p>
       </Section>

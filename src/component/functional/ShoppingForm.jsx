@@ -6,14 +6,13 @@ import { useForm } from "react-hook-form";
 
 export const ShoppingForm = () => {
     const [selectedOption, setSelectedOption] = useState('');
-    const { setDeliveryPrice } = useContext(CarContext);
+    const { setDeliveryPrice, setShopping } = useContext(CarContext);
     const [successfully, setSuccessfully] = useState(false);
 
     const {
         register,
         handleSubmit,
         reset,
-        formState: { errors },
     } = useForm();
 
     const handleSelectChange = (event) => {
@@ -26,8 +25,14 @@ export const ShoppingForm = () => {
     const onSubmit = async (data) => {
         try {
             setSuccessfully(!successfully);
-            console.log(data);
-            reset();
+            setTimeout(() => {
+                setShopping([]);
+                setDeliveryPrice("");
+                console.log(data);
+                reset();
+                setSelectedOption("");
+                setSuccessfully(false);
+            }, 1500);
         } catch (error) {
             console.log(error);
         }
@@ -50,7 +55,6 @@ export const ShoppingForm = () => {
                 <option value="yes">Sí</option>
                 <option value="no">No</option>
             </select>
-            <p>Opción seleccionada: {selectedOption}</p>
 
             {
                 selectedOption == "yes" ?
@@ -81,10 +85,10 @@ export const ShoppingForm = () => {
                             >
                                 Enviar pedido
                                 {
-                                    (successfully) &&
-                                    (<div className=''>
-                                        {successMessage}
-                                    </div>)
+                                    (successfully) ?
+                                        (<div className=''>
+                                            {successMessage}
+                                        </div>) : ('')
                                 }
                             </button>
 
