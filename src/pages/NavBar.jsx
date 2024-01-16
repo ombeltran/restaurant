@@ -33,7 +33,7 @@ export const NavBar = () => {
         py-1 border-b-2 shadow-md bg-white'>
                 <Link to="/">
                     <img
-                        className='h-16 rounded-full ml-10'
+                        className='h-16 rounded-full ml-10 border-4 border-red-600'
                         src={logo}
                         alt="logo"
                     />
