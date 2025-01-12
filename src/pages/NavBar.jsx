@@ -29,8 +29,7 @@ export const NavBar = () => {
 
     return (
         <>
-            <nav className=' fixed flex items-center justify-between z-50 w-full h-[72px]  
-        py-1 border-b-2 shadow-md bg-white'>
+            <nav className=' fixed flex items-center justify-between z-50 w-full h-[72px] py-1 border-b-2 shadow-md bg-white'>
                 <Link to="/">
                     <img
                         className='h-16 rounded-full ml-10 border-4 border-red-600'
@@ -39,9 +38,9 @@ export const NavBar = () => {
                     />
                 </Link>
 
-                <div className={`flex flex-col items-center ${isMenuOpen? ('pt-36 md:pt-0'):('pt-4') }`}>
-                    <label
-                        htmlFor="menu"
+                <div className={`flex flex-col items-center ${isMenuOpen? ('pt-[300px] md:pt-0'):('pt-4 md:p-0') }`}>
+                    <div
+                        // htmlFor="menu"
                         onClick={handleMenuOpen}
                         className='flex justify-center w-16 mb-6 md:hidden'
                     >
@@ -51,11 +50,10 @@ export const NavBar = () => {
                                 (<TiThMenuOutline className='text-red-700 text-4xl md:hidden' />)
                         }
 
-                    </label>
-
+                    </div>
 
                     <ul className={`flex flex-col items-center justify-center md:flex-row gap-6 text-2xl font-bold 
-                            text-red-700 cursor-pointer md:bg-transparent w-full md:w-0 mt-8 md:mt-0 rounded-2xl
+                            text-red-700 cursor-pointer md:bg-transparent w-full md:w-0 mt-5 md:mt-0 rounded-2xl
                             ${isMenuOpen ? ('block') : ('hidden md:inline-flex')}`}
                         onClick={handleMenuOpen}
                     >
@@ -67,8 +65,6 @@ export const NavBar = () => {
                             </li>
                         ))}
                     </ul>
-
-
                 </div>
 
                 <Botton

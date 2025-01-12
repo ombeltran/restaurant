@@ -9,7 +9,7 @@ import { CardInfo } from "../component/ui/CardInfo";
 import { IoLogoWhatsapp } from "react-icons/io";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import imageI  from "/frontPage/hamburguer.jpeg";
+import imageI from "/frontPage/hamburguer.jpeg";
 import imageII from "/frontPage/hotDog.jpeg";
 import imageIII from "/frontPage/salchipapa.jpeg";
 import imageIV from "/frontPage/logo.jpeg";
@@ -46,11 +46,11 @@ export const Home = () => {
           className='flex flex-col items-center justify-center scale-75 lg:scale-100  px-8 pb-4 text-justify 
          h-[328px] w-[400px] md:w-[450px] rounded-2xl shadow-xl shadow-black'
         >
-          <h1 className='text-5xl font-bold text-red-600'>¡Bienvenido!</h1>
+          <h1 className='text-5xl font-bold text-red-600'>Welcome!</h1>
           <p className='text-3xl font-bold'>
-            5ta Estacion es más que comida, es una experiencia de sabores.
-            Haz tu pedido ya a la <span className='text-red-600 font-bold'>
-              5ta Estación
+            5th Station is more than just food; it's a flavorful experience.
+            Place your order now at <span className='text-red-600 font-bold'>
+              5th Station!
             </span>.
           </p>
         </div>
@@ -78,7 +78,7 @@ export const Home = () => {
       h-[600px] w-full bg-gradient-to-t from-white to-red-600">
         <div className="flex flex-col items-center gap-12 xl:scale-[80%] 
         lg:scale-[60%] sm:scale-[50%] scale-[35%]">
-          <h1 className='text-center text-6xl font-bold text-white md:mt-3'>¡Bienvenidos! El servicio es nuestro lema</h1>
+          <h1 className='text-center text-6xl font-bold text-white md:mt-3'>Welcome! Service is our motto.</h1>
           <div
             className='flex items-center justify-center w-[1275px] h-[760px] border-2 p-2
           border-gray-300 shadow-xl rounded-xl mb-6'
@@ -104,7 +104,7 @@ export const Home = () => {
           <CardInfo>
             <IoLogoWhatsapp className='text-green-800 md:text-9xl text-[90px] mx-auto mb-4' />
             <p className='text-3xl font-bold'>
-              Haz tus pedidos con <span className='text-red-600'>What'sApp</span>
+            Place your order with <span className='text-red-600'>What'sApp</span>
             </p>
           </CardInfo>
 
@@ -115,14 +115,14 @@ export const Home = () => {
               alt="logo"
             />
             <p className='text-3xl font-bold'>
-              También desde nuestra <span className='text-red-600'>pagina web</span>
+              Also from our <span className='text-red-600'>website</span>
             </p>
           </CardInfo>
         </div>
 
         <p className='text-4xl font-bold text-black/80 pb-4'>
-          Puedes pagar a través <span className='text-red-600'>Nequi Bancolombia</span>
-          , o si lo deseas cuando recibas tu pedido.
+          You can pay through <span className='text-red-600'>Nequi Bancolombia</span>
+          , or if you wish when you receive the order.
         </p>
       </Section>
       <Footer />

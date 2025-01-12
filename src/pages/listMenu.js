@@ -23,44 +23,44 @@ export const listDrinks = [
 export const listHotDogs = [
     {
         id: "B1",
-        name: "Perro caliente Hawaiano",
+        name: "Hawaian hot dog",
         price: 10000,
         image: "/menu/hotDog.jpg"
     },
     {
         id: "B2",
-        name: "Perro caliente Ranchero",
+        name: "Ranchero hot dog",
         price: 12000,
         image: "/menu/hotDog.jpg"
     },
     {
         id: "B3",
-        name: "Perro caliente Colmbiano",
+        name: "Colombian hot dog",
         price: 15000,
         image: "/menu/hotDog.jpg"
     }
 ]
 
-export const listHamburguer = [
+export const listHamburger = [
     {
         id: "C1",
-        name: "Hamburguesa sencilla",
+        name: "Basic hamburger",
         price: 15000,
-        image: "/menu/hamburguer.jpg"
+        image: "/menu/hamburger.jpg"
 
     },
     {
         id: "C2",
-        name: "Hamburguesa doble queso",
+        name: "Double chesse hamburger",
         price: 25000,
-        image: "/menu/hamburguer.jpg"
+        image: "/menu/hamburger.jpg"
 
     },
     {
         id: "C3",
-        name: "Hamburguesa monster cheese",
+        name: "Monster cheese hamburger",
         price: 35000,
-        image: "/menu/hamburguer.jpg"
+        image: "/menu/hamburger.jpg"
 
     }
 ]
@@ -68,21 +68,21 @@ export const listHamburguer = [
 export const listSalchipapa = [
     {
         id: "D1",
-        name: "Salchipapas ranchera",
+        name: "Ranch salchipapa",
         price: 10000,
         image: "/menu/salchipapa.jpg"
 
     },
     {
         id: "D2",
-        name: "Salchipapas super familiar",
+        name: "Super family salchipapa",
         price: 12000,
         image: "/menu/salchipapa.jpg"
 
     },
     {
         id: "D3",
-        name: "Salchipapas mega",
+        name: "Mega salchipapa",
         price: 15000,
         image: "/menu/salchipapa.jpg"
 
@@ -92,7 +92,7 @@ export const listSalchipapa = [
 export const listGrill = [
     {
         id: "E1",
-        name: "Punta de anca",
+        name: "Haunch point",
         price: 30000,
         image: "/menu/carneAsada.jpg"
 
@@ -110,8 +110,8 @@ export const listGrill = [
 export const listCombos = [
     {
         id: "1",
-        name: "Hamburguesa, papas y gaseosa",
+        name: "Hamburger, fries and soda",
         price: 30000,
-        image: "/menu/comboHamburguesa.jpg"
+        image: "/menu/comboHamburger.jpg"
     },
 ]

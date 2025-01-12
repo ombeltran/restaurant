@@ -1,14 +1,22 @@
 export const listNavigation = [
     {
-        name: "Inicio",
+        name: "Home",
         path: "/"
+    },
+    {
+        name:"About",
+        path:"/about"
     },
     {
         name: "Menu",
         path: "/menu"
     },
-    // {
-    //     name: "Historias",
-    //     path: "/contact"
-    // }
+    {
+        name: "Gallery",
+        path: "/gallery"
+    },
+    {
+        name: "Contact",
+        path: "/contact"
+    },
 ]
