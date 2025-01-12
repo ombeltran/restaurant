@@ -17,7 +17,7 @@ export const About = () => {
         }
     ]
     return (
-        <div className='pt-[20%] h-dvh bg-gradient-to-t from-red-200 to-white'>
+        <div className='pt-[20%] sm:pt-[10%] xl:pt-[5%] h-dvh bg-gradient-to-t from-red-200 to-white'>
             <div className="flex flex-col md:flex-row mx-auto items-center p-4 text-xl w-[92%] gap-4">
                 <h1 className="text-3xl font-bold text-red-700 relative">
                     ABOUT US
