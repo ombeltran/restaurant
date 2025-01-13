@@ -87,15 +87,16 @@ export const Menu = () => {
   };
 
   return (
-    <div className='bg-gradient-to-t from-red-200 to-white h-screen relative'>
-      <div className="absolute mt-20 md:mt-28 flex ml-7 items-center p-4 text-xl w-[92%] gap-4">
+    <div className='bg-gradient-to-t from-red-200 to-white h-fit md:h-screen'>
+      <div className='h-[20px] md:h-[15px]'></div>
+      <div className="flex mt-20 md:mt-28 ml-7 items-center p-2 md:p-4 text-xl w-[92%] gap-4">
         <h1 className="md:text-3xl font-bold text-red-700 relative">
           MENU
         </h1>
         <div className="w-24 pt-[1%] border-b-2 border-red-700"></div>
       </div>
 
-      <div className="absolute flex md:flex-row md:h-auto w-screen md:w-full mt-[110px] md:mt-[200px] h-screen flex-col">
+      <div className="flex md:flex-row md:h-auto w-screen md:w-full md:mt-[50px] h-screen flex-col">
         <div className="flex flex-wrap md:flex-col w-full gap-4 md:gap-8 
     h-auto md:h-full md:w-[15%] justify-center items-center p-4 md:p-9 mt-8 md:mt-0">
           {optionsMenu.map((option) => (

@@ -16,16 +16,25 @@ export const Contact = () => {
     <div className="h-screen bg-gradient-to-t from-red-200 to-white" >
       <div className="h-[110px] md:h-[150px]"></div>
       <div className="flex flex-col items-center">
+        <div className="flex flex-row items-center p-4 mb-6 text-xl w-[92%] gap-4 md:w-[500px]">
+          <h1 className="md:text-3xl font-bold text-red-700 relative">
+            CONTACT
+          </h1>
+          <div className="w-24 pt-[1%] border-b-2 border-red-700"></div>
+        </div>
+
         <div className="max-w-[70%] md:max-w-[40%] mx-auto text-center pb-8 mb-6">
-          <h2 className="text-4xl font-bold text-red-600 pb-3">Contact us</h2>
+          <h2 className="text-4xl font-bold text-red-700 pb-3">
+            Contact us
+          </h2>
           <p className="text-center text-2xl">
             Place your reservation.
           </p>
         </div>
 
-        <form 
-        className="h-fit md:w-[500px] p-14 rounded-xl bg-white shadow-xl shadow-red-400"
-        onSubmit={handleSubmit(onSubmit)}
+        <form
+          className="h-fit md:w-[500px] p-14 rounded-xl bg-white shadow-xl shadow-red-400"
+          onSubmit={handleSubmit(onSubmit)}
         >
           {/* Section name */}
           <label htmlFor="name" className="block text-lg font-medium">Name</label>
