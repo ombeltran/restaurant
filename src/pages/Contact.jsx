@@ -13,7 +13,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className="h-screen bg-gradient-to-t from-red-200 to-white" >
+    <div className="h-fit pb-12 md:pb-0 md:h-screen bg-gradient-to-t from-red-200 to-white" >
       <div className="h-[110px] md:h-[150px]"></div>
       <div className="flex flex-col items-center">
         <div className="flex flex-row items-center p-4 mb-6 text-xl w-[92%] gap-4 md:w-[500px]">

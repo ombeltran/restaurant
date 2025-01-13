@@ -6,6 +6,8 @@ import { NavBar } from "./pages/NavBar";
 import { SCarProvider } from "./context/SCarProvider";
 import { About } from "./pages/About";
 import { Gallery } from "./pages/Gallery";
+import { Footer } from "./pages/Footer";
+
 
 function App() {
 
@@ -20,6 +22,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer/>
       </SCarProvider>
     </>
   )

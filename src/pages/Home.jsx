@@ -4,7 +4,6 @@ import ReactPlayer from 'react-player';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { Footer } from "./Footer";
 import { CardInfo } from "../component/ui/CardInfo";
 import { IoLogoWhatsapp } from "react-icons/io";
 import AOS from 'aos';
@@ -125,7 +124,6 @@ export const Home = () => {
           , or if you wish when you receive the order.
         </p>
       </Section>
-      <Footer />
     </div>
   );
 };
