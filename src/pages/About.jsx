@@ -18,10 +18,10 @@ export const About = () => {
         }
     ]
     return (
-        <div className="xl:h-screen bg-gradient-to-t from-red-200 to-white">
+        <div className="2xl:h-screen h-fit bg-gradient-to-t from-red-200 to-white">
             <div className="h-[72px]"></div>
-            <Section >
-                <div className="flex flex-row mx-auto items-center p-4 text-xl w-[92%] gap-4">
+            <Section className="h-full">
+                <div className="flex flex-row mx-auto items-center p-4 text-xl w-[92%] gap-4 ">
                     <h1 className="md:text-3xl font-bold text-red-700 relative">
                         ABOUT US
                     </h1>
