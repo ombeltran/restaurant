@@ -12,6 +12,7 @@ import {
   listCombos,
   listGrill
 } from "./listMenu";
+import { Section } from '../component/ui/Section';
 
 export const Menu = () => {
   const [listMenu, setListMenu] = useState([]);
@@ -87,58 +88,61 @@ export const Menu = () => {
   };
 
   return (
-    <div className='bg-gradient-to-t from-red-200 to-white h-fit md:h-screen'>
-      <div className='h-[20px] md:h-[15px]'></div>
-      <div className="flex mt-20 md:mt-28 ml-7 items-center p-2 md:p-4 text-xl w-[92%] gap-4">
-        <h1 className="md:text-3xl font-bold text-red-700 relative">
-          MENU
-        </h1>
-        <div className="w-24 pt-[1%] border-b-2 border-red-700"></div>
-      </div>
 
-      <div className="flex md:flex-row md:h-auto w-screen md:w-full md:mt-[50px] h-screen flex-col">
-        <div className="flex flex-wrap md:flex-col w-full gap-4 md:gap-8 
+    <div className='bg-gradient-to-t from-red-200 to-white h-full lg:h-screen'>
+      <div className='h-[72px]'></div>
+      <Section>
+        <div className="flex mt-3 md:mt-10 ml-7 items-center p-2 md:p-4 text-xl w-[92%] gap-4">
+          <h1 className="md:text-3xl font-bold text-red-700 relative">
+            MENU
+          </h1>
+          <div className="w-24 pt-[1%] border-b-2 border-red-700"></div>
+        </div>
+
+        <div className="flex md:flex-row md:h-auto w-screen md:w-full md:mt-[10px] h-screen flex-col">
+          <div className="flex flex-wrap md:flex-col w-full gap-4 md:gap-8 
     h-auto md:h-full md:w-[15%] justify-center items-center p-4 md:p-9 mt-8 md:mt-0">
-          {optionsMenu.map((option) => (
-            <Botton
-              key={option}
-              onClick={() => handleBottonClick(option)}
-              className="text-sm h-10 shadow-xl inset-0 bg-gradient-to-tr from-white/65 
+            {optionsMenu.map((option) => (
+              <Botton
+                key={option}
+                onClick={() => handleBottonClick(option)}
+                className="text-sm h-10 shadow-xl inset-0 bg-gradient-to-tr from-white/65 
           from-10% via-red-600 via-30% to-red-800 to-95% w-[104px] md:w-28"
-            >
-              {option}
-            </Botton>
-          ))}
-        </div>
+              >
+                {option}
+              </Botton>
+            ))}
+          </div>
 
-        <div className="flex flex-wrap gap-4 w-full justify-center md:gap-2 h-auto md:w-[85%] md:pt-4">
-          {listMenu.map(({ name, price, image, id }) => (
-            <Card key={id} className="scale-[90%]">
-              <img
-                src={image}
-                alt={name}
-                className="w-full h-[57%] sm:h-[70%] rounded-t-2xl"
-              />
-              <div className="flex flex-col justify-between w-full">
-                <div className="flex flex-col justify-between p-3 2xl:text-2xl 2xl:py-10">
-                  <div>{name}</div>
-                  <div className="font-normal">{formatCurrency(price)}</div>
-                </div>
+          <div className="flex flex-wrap gap-4 w-full justify-center md:gap-2 h-auto md:w-[85%] md:pt-4">
+            {listMenu.map(({ name, price, image, id }) => (
+              <Card key={id} className="scale-[90%]">
+                <img
+                  src={image}
+                  alt={name}
+                  className="w-full h-[57%] sm:h-[70%] rounded-t-2xl"
+                />
+                <div className="flex flex-col justify-between w-full">
+                  <div className="flex flex-col justify-between p-3 2xl:text-2xl 2xl:py-10">
+                    <div>{name}</div>
+                    <div className="font-normal">{formatCurrency(price)}</div>
+                  </div>
 
-                <div
-                  className="flex justify-center items-center bg-black/90 
+                  <div
+                    className="flex justify-center items-center bg-black/90 
               rounded-b-2xl w-full h-12 cursor-pointer 2xl:text-2xl 2xl:h-14 px-4"
-                  onClick={() => { handleAddToCart(id, name, price) }}
-                >
-                  Agregar al carrito
+                    onClick={() => { handleAddToCart(id, name, price) }}
+                  >
+                    Agregar al carrito
+                  </div>
                 </div>
-              </div>
-            </Card>
-          ))}
+              </Card>
+            ))}
+          </div>
         </div>
-      </div>
 
-      <ShoppingCar />
+        <ShoppingCar />
+      </Section>
     </div>
 
   );
