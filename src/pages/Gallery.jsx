@@ -23,7 +23,7 @@ export const Gallery = () => {
   }, []);
 
   return (
-    <div className='pt-[10px] pb-10 md:pb-0 h-fit lg:h-screen bg-gradient-to-t from-red-200 to-white'>
+    <div className='pt-[10px] pb-10 md:pb-0 h-fit xl:h-screen bg-gradient-to-t from-red-200 to-white'>
       <div className="h-[72px]"></div>
       <Section>
         <div className="flex flex-row mx-auto items-center p-4 text-xl w-[92%] gap-4">
@@ -35,7 +35,7 @@ export const Gallery = () => {
         <h2 className="flex flex-row mx-auto items-center p-4 mb-4 text-3xl w-[92%] font-bold text-red-700">
           See our restaurant
         </h2>
-        <div className='flex flex-wrap justify-center mx-auto w-[80%] md:w-full'>
+        <div className='flex flex-wrap justify-center mx-auto w-[80%] 3xl:w-full'>
           {
             imagesList.map((image, index) => {
               return (
@@ -44,7 +44,7 @@ export const Gallery = () => {
                   <img
                     src={image.path}
                     alt="gallery"
-                    className="w-[400px] h-96 object-cover"
+                    className="w-[400px] 3xl:h-96 max-h-96 object-cover"
                     loading="lazy"
                   />
                 </div>
