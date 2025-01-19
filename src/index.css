@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media screen and (max-width: 1500px) and (max-height: 1500px) {
+    .gallery, .menu {
+        height: 1100px;
+    }
+  }
+
+@media screen and (max-width: 1500px) and (max-height: 800px) {
+    .gallery, .menu {
+        height: 900px;
+    }
+  }
+
+@media screen and (max-height: 900px) and (max-width: 400px) {
+    .gallery {
+        height: 100%;
+    }
+  }

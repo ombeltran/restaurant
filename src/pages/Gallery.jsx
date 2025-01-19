@@ -23,7 +23,8 @@ export const Gallery = () => {
   }, []);
 
   return (
-    <div className='pt-[10px] pb-10 md:pb-0 h-fit xl:h-screen bg-gradient-to-t from-red-200 to-white'>
+    // All media query is managment from css code file index.css
+    <div className='gallery pt-[10px] pb-10 md:pb-0 bg-gradient-to-t from-red-200 to-white'>
       <div className="h-[72px]"></div>
       <Section className="h-full">
         <div className="flex flex-row mx-auto items-center p-4 text-xl w-[92%] gap-4">
@@ -35,16 +36,15 @@ export const Gallery = () => {
         <h2 className="flex flex-row mx-auto items-center p-4 mb-4 text-3xl w-[92%] font-bold text-red-700">
           See our restaurant
         </h2>
-        <div className='flex flex-wrap justify-center mx-auto min-w-[80%] h-[25%]'>
+        <div className='flex flex-wrap justify-center content-center mx-auto w-[80%] h-[70%]'>
           {
             imagesList.map((image, index) => {
               return (
-                <div key={index} className="flex w-[400px]">
-                  {/* Usando loading="lazy" para mejorar el rendimiento */}
+                <div key={index} className='flex'>
                   <img
                     src={image.path}
                     alt="gallery"
-                    className="w-[400px]"
+                    className="w-[300px] h-[200px] object-fill"
                     loading="lazy"
                   />
                 </div>

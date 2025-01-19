@@ -89,7 +89,7 @@ export const Menu = () => {
 
   return (
 
-    <div className='bg-gradient-to-t from-red-200 to-white h-full lg:h-screen'>
+    <div className='menu bg-gradient-to-t from-red-200 to-white'>
       <div className='h-[72px]'></div>
       <Section>
         <div className="flex mt-3 md:mt-10 ml-7 items-center p-2 md:p-4 text-xl w-[92%] gap-4">
