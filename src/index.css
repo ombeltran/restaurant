@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@media screen and (max-width: 1500px) and (max-height: 1500px) {
+@media screen and (max-width: 3500px) and (max-height: 3800px) {
     .gallery, .menu, .about {
         height: 1100px;
     }
