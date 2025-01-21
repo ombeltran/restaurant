@@ -18,7 +18,7 @@ export const About = () => {
         }
     ]
     return (
-        <div className="abouth-fit bg-gradient-to-t from-red-200 to-white">
+        <div className="about bg-gradient-to-t from-red-200 to-white">
             <div className="h-[72px]"></div>
             <Section className="h-full">
                 <div className="flex flex-row mx-auto items-center p-4 text-xl w-[92%] gap-4 ">

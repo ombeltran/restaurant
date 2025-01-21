@@ -3,25 +3,29 @@
 @tailwind utilities;
 
 @media screen and (max-width: 3500px) and (max-height: 3800px) {
-    .gallery, .menu, .about {
-        height: 1100px;
-    }
+
+  .gallery,
+  .menu,
+  .about {
+    height: 1100px;
   }
+
+  .contact {
+    height: 1150px;
+  }
+}
 
 @media screen and (max-width: 1500px) and (max-height: 800px) {
-    .gallery, .menu, .about  {
-        height: 900px;
-    }
-  }
 
-@media screen and (max-width: 3500px) and (max-height: 3800px) {
-    .contact {
-        height: 1150px;
-    }
+  .gallery,
+  .menu,
+  .about {
+    height: 900px;
   }
+}
 
 @media screen and (max-height: 900px) and (max-width: 400px) {
-    .gallery {
-        height: 100%;
-    }
+  .gallery {
+    height: 100%;
   }
+}
