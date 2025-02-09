@@ -1,9 +1,9 @@
 export const optionsMenu = [
-    "Bebidas",
-    "Perro caliente",
-    "Hamburguesa",
+    "Drinks",
+    "Hot dogs",
+    "Hambugers",
     "Salchipapas",
-    "Asados",
+    "Grilled meats",
     "Combos"
 
 ]

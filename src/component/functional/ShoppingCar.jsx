@@ -43,7 +43,7 @@ export const ShoppingCar = () => {
     setShopping([]);
   }
 
-  const deliveryService = listService.find(item => item.service === "Domicilio");
+  const deliveryService = listService.find(item => item.service === "Delivery");
   const valueService = deliveryService ? deliveryService.price : 0;
 
   return (
@@ -52,12 +52,12 @@ export const ShoppingCar = () => {
         carVisible ? (
           <div className='absolute flex flex-col top-[78px] right-6 w-[320px] md:w-[360px] p-3 mb-6 
           overflow-y-auto max-h-[700px] bg-white border-2 rounded-lg z-10'>
-            <h1 className='font-bold text-2xl mb-3'>Articulos en compra:</h1>
+            <h1 className='font-bold text-2xl mb-3'>Items for purchase:</h1>
             {shopping.map(({ id, name, qty, price }) => (
               <div key={id} className='bg-gray-100 mb-2 border-2 p-1'>
-                <p><span className='font-bold'>Producto: </span>{name}</p>
+                <p><span className='font-bold'>Item: </span>{name}</p>
                 <div className='flex flex-row gap-2 items-center'>
-                  <p><span className='font-bold'>Cantidad: </span>{qty}</p>
+                  <p><span className='font-bold'>Quantity: </span>{qty}</p>
                   <div
                     className='flex justify-center items-center bg-black w-5 h-5 pb-1 
               ml-2 rounded-full text-white cursor-pointer'
@@ -72,9 +72,9 @@ export const ShoppingCar = () => {
                     className='flex justify-center items-center bg-black w-20 h-7 text-white
             rounded-full cursor-pointer'
                     onClick={() => handleShoppingCar("Delete", id)}
-                  >Eliminar</div>
+                  >Delete</div>
                 </div>
-                <p><span className='font-bold'>Precio: </span>{formatCurrency(price * qty)}</p>
+                <p><span className='font-bold'>Price: </span>{formatCurrency(price * qty)}</p>
               </div>
             ))}
             <div className='flex flex-col border-t-2 border-b-2  border-black'>
@@ -83,7 +83,7 @@ export const ShoppingCar = () => {
                   deliveryPrice === 'yes' ? (
                     <div>
                       <div className='flex justify-between pr-10'>
-                        <h3 className='font-bold text-xl'>Domicilio:</h3>
+                        <h3 className='font-bold text-xl'>Delivery:</h3>
                         <h3 className='font-bold text-xl'>{formatCurrency(valueService)} </h3>
                       </div>
                       <div className='flex justify-between pr-10'>
@@ -99,7 +99,7 @@ export const ShoppingCar = () => {
                   className='bg-black w-72 h-8 p-1 mt-2 text-white rounded-full'
                   onClick={handleEmptyCar}
                 >
-                  Vaciar carrito
+                  Empty shopping cart
                 </button>
               </div>
             </div>

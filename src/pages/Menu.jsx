@@ -41,19 +41,19 @@ export const Menu = () => {
 
   const handleBottonClick = (option) => {
     switch (option) {
-      case "Bebidas":
+      case "Drinks":
         setListMenu(listDrinks);
         break;
-      case "Perro caliente":
+      case "Hot dogs":
         setListMenu(listHotDogs);
         break;
-      case "Hamburguesa":
+      case "Hambugers":
         setListMenu(listHamburger);
         break;
       case "Salchipapas":
         setListMenu(listSalchipapa);
         break;
-      case "Asados":
+      case "Grilled meats":
         setListMenu(listGrill);
         break;
       case "Combos":

@@ -1,6 +1,6 @@
 export const listService = [
     {
-        service: "Domicilio",
+        service: "Delivery",
         price: 4000
     }
 ];

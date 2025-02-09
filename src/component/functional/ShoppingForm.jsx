@@ -20,7 +20,7 @@ export const ShoppingForm = () => {
         setDeliveryPrice(event.target.value);
     };
 
-    const successMessage = "¡Pedido enviado exitosamente!";
+    const successMessage = "¡Order sent successfully!";
 
     const onSubmit = async (data) => {
         try {
@@ -45,14 +45,14 @@ export const ShoppingForm = () => {
             className='flex flex-col mt-3 gap-1 w-48'
             onSubmit={handleSubmit(onSubmit)}
         >
-            <label className='font-bold'>¿Desea servicio de domicilio?</label>
+            <label className='font-bold'>Do you want to delivery service?</label>
             <select
                 value={selectedOption}
                 onChange={handleSelectChange}
                 className='border-2 rounded-lg'
             >
-                <option value="" disabled>Selecciona una opción</option>
-                <option value="yes">Sí</option>
+                <option value="" disabled>Choose an option</option>
+                <option value="yes">Yes</option>
                 <option value="no">No</option>
             </select>
 
@@ -60,7 +60,7 @@ export const ShoppingForm = () => {
                 selectedOption == "yes" ?
                     (
                         <>
-                            <label htmlFor="name">Nombre:</label>
+                            <label htmlFor="name">Name:</label>
                             <input
                                 className='border-2 rounded-lg w-72'
                                 type="text"
@@ -70,7 +70,7 @@ export const ShoppingForm = () => {
                                 {...register("name", { required: true })}
                             />
 
-                            <label htmlFor="email">Correo electrónico:</label>
+                            <label htmlFor="email">Email:</label>
                             <input
                                 className='border-2 rounded-lg w-72 mb-3'
                                 type="email"
@@ -83,7 +83,7 @@ export const ShoppingForm = () => {
                             <button
                                 className='bg-black text-white font-bold py-1 w-72 rounded-full'
                             >
-                                Enviar pedido
+                                Send order
                                 {
                                     (successfully) ?
                                         (<div className=''>
